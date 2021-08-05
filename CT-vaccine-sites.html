@@ -9,7 +9,7 @@
     <title>CSSL COVID-19 Dashboards</title>
     <meta property="og:locale" content="en_US" />
     <link rel="stylesheet" href="https://whiting.me/assets/main.css" />
-    <link rel="stylesheet" href="./res/css/CT-vaccine-sites.css">
+    <link rel="stylesheet" href="./res/css/CT-vaccine-sites.css" />
     <link
       href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
       rel="stylesheet"
@@ -23,14 +23,13 @@
           <a href="index.html">←</a> Which vaccine sites do people from each CT
           go near in their day to day life?
         </h1>
-        <p>Please wait while the page loads</p>
         <p>
           The Distance Threshold determines the spread of suggested vaccination
           sites. Lower thresholds prefer placing more vaccination sites at
           high-visited areas whereas higher thresholds prefer placing more sites
           at a diversity of areas.
         </p>
-        <div id="observablehq-map_vsites-dd9a5117" > <h1> Loading... </h1> </div>
+        <div id="observablehq-map_vsites-dd9a5117"><h1>Loading...</h1></div>
       </div>
     </main>
     <footer>
@@ -42,10 +41,16 @@
       </div>
     </footer>
     <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
       import define from "https://api.observablehq.com/@wattslab/philly-covid-19-optimal-vaccine-site-speed-fix.js?v=3";
-      new Runtime().module(define, name => {
-        if (name === "map_vsites") return new Inspector(document.querySelector("#observablehq-map_vsites-dd9a5117"));
+      new Runtime().module(define, (name) => {
+        if (name === "map_vsites")
+          return new Inspector(
+            document.querySelector("#observablehq-map_vsites-dd9a5117")
+          );
       });
     </script>
   </body>

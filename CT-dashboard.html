@@ -9,7 +9,7 @@
     <title>CSSL COVID-19 Dashboards</title>
     <meta property="og:locale" content="en_US" />
     <link rel="stylesheet" href="https://whiting.me/assets/main.css" />
-    <link rel="stylesheet" href="./res/css/CT-dashboard.css">
+    <link rel="stylesheet" href="./res/css/CT-dashboard.css" />
     <link
       href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
       rel="stylesheet"
@@ -22,14 +22,13 @@
         <h1>
           <a href="index.html">←</a> How are people in each CT moving around?
         </h1>
-        <p>Please wait while the page loads</p>
         <p>
           Select a CT or a percentile (based on the variable in the dropdown in
           the top right of the map below), and see the places that most people
           from that selection are visiting with an ordered table that can be
           used to quickly navigate.
         </p>
-        <div id="observablehq-map3-70f34ae5"> <h1> Loading... </h1> </div>
+        <div id="observablehq-map3-70f34ae5"><h1>Loading...</h1></div>
       </div>
     </main>
     <footer>
@@ -41,10 +40,16 @@
       </div>
     </footer>
     <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
       import define from "https://api.observablehq.com/@wattslab/philly-mapping-covid-19-vaccinations.js?v=3";
-      new Runtime().module(define, name => {
-        if (name === "map3") return new Inspector(document.querySelector("#observablehq-map3-70f34ae5"));
+      new Runtime().module(define, (name) => {
+        if (name === "map3")
+          return new Inspector(
+            document.querySelector("#observablehq-map3-70f34ae5")
+          );
       });
     </script>
   </body>
