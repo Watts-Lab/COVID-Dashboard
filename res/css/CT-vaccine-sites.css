@@ -1,0 +1,102 @@
+.mainmap {
+    width: 100% !important;
+    height: 700px !important;
+}
+.icon{background:none;}
+.ct_tooltip, .vsites_tooltip{
+    text-align: center;
+}
+.ct_tooltip span, .vsites_tooltip span{
+    font-size: 10px;
+    padding: 0;
+}
+.search-box input{
+    padding: 5px 0px 5px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 250px;
+}
+.hover-cluster-marker-inner, .hover-cluster-marker-shadow{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.hover-cluster-marker {
+    position: relative;
+    top: -24px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+}
+.hover-cluster-marker-inner{
+    position: relative;
+    top: -42px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+.hover-cluster-marker-shadow{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    box-shadow: 0 0 10px 5px white;
+}
+.cluster-tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+.toggle-btn, .inner-btn{
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 2px grey;
+    cursor: pointer !important;
+}
+.inner-btn {
+    display: inline-block;
+    background-color: #ddd;
+}
+.sites-marker {
+    background: url('../img/Shot_0.png') no-repeat center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+.wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.slider-control {
+    width: 350px;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.exit-btn {
+    background: url('../img/times-solid.png') no-repeat center;
+    background-color: #fff;
+    background-size: contain;
+    padding: 5px;
+    height: 10px;
+    width: 10px;
+}
+.vsites-table {
+    max-width: 350px;
+    overflow-x: auto; 
+    overflow-y: auto;
+}
+.table-control {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.vsites-table table tr > *:nth-child(5) {
+    background-color: blue;
+    display: none !important;
+}
