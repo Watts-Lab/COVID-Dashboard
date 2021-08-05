@@ -2,7 +2,9 @@
     width: 100% !important;
     height: 700px !important;
 }
-.icon{background:none;}
+.icon{
+    background: none;
+}
 .ct_tooltip, .vsites_tooltip{
     text-align: center;
 }

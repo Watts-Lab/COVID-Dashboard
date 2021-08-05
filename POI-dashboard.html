@@ -9,6 +9,11 @@
     <title>CSSL COVID-19 Dashboards</title>
     <meta property="og:locale" content="en_US" />
     <link rel="stylesheet" href="https://whiting.me/assets/main.css" />
+    <link rel="stylesheet" href="./res/css/POI-dashboard.css">
+    <link
+      href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -28,12 +33,7 @@
           To leave a selection, use the <strong>Exit</strong> button that
           appears at the bottom right of the view.
         </p>
-        <iframe
-          width="100%"
-          height="1002"
-          frameborder="0"
-          src="https://observablehq.com/embed/@wattslab/philly-mapping-covid-19-vaccinations-poi-view?cells=viewof+cbg_map%2Cviewof+scale%2Cvsite_legend"
-        ></iframe>
+        <div id="observablehq-viewof-cbg_map-7f83da3f"> <h1> Loading... </h1> </div>
       </div>
     </main>
     <footer>
@@ -44,5 +44,12 @@
         >
       </div>
     </footer>
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/@wattslab/philly-mapping-covid-19-vaccinations-poi-view.js?v=3";
+      new Runtime().module(define, name => {
+        if (name === "viewof cbg_map") return new Inspector(document.querySelector("#observablehq-viewof-cbg_map-7f83da3f"));
+      });
+    </script>
   </body>
 </html>
