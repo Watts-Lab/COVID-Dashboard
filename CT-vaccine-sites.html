@@ -9,6 +9,7 @@
     <title>CSSL COVID-19 Dashboards</title>
     <meta property="og:locale" content="en_US" />
     <link rel="stylesheet" href="https://whiting.me/assets/main.css" />
+    <link rel="stylesheet" href="./res/css/CT-vaccine-sites.css">
     <link
       href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
       rel="stylesheet"
@@ -29,12 +30,7 @@
           high-visited areas whereas higher thresholds prefer placing more sites
           at a diversity of areas.
         </p>
-        <iframe
-          width="100%"
-          height="968"
-          frameborder="0"
-          src="https://observablehq.com/embed/@wattslab/philly-covid-19-optimal-vaccine-site-speed-fix?cells=map_vsites%2Cviewof+vsite_distance_threshold%2Cviewof+target_geoid"
-        ></iframe>
+        <div id="observablehq-map_vsites-dd9a5117" > <h1> Loading... </h1> </div>
       </div>
     </main>
     <footer>
@@ -45,5 +41,12 @@
         >
       </div>
     </footer>
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/@wattslab/philly-covid-19-optimal-vaccine-site-speed-fix.js?v=3";
+      new Runtime().module(define, name => {
+        if (name === "map_vsites") return new Inspector(document.querySelector("#observablehq-map_vsites-dd9a5117"));
+      });
+    </script>
   </body>
 </html>
