@@ -1,5 +1,4 @@
 # COVID-Dashboard
+This repository manages a website for hosting [COVID-19 dasshboards](https://observablehq.com/collection/@wattslab/covid-dashboards) from the [CSSLab](http://css.seas.upenn.edu). The website is online at [`covid.seas.upenn.edu`](https://covid.seas.upenn.edu). 
 
-### [Dasshboards](https://observablehq.com/collection/@wattslab/covid-dashboards)
-
-### [AWS Research Proposal](https://www.overleaf.com/project/5ed85649dd026800011c45c1/invite/token/1cd2e9eb378077e9abfbe4a93aaa02f92f42f84f7cf714ed?project_name=AWS%20Covid%20Grant&user_first_name=homa.hosseinmardi)
+Please file an [issue](https://github.com/Watts-Lab/COVID-Dashboard/issues/new/) if you want to report a problem or suggest a change.
