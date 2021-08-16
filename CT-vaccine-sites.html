@@ -29,7 +29,7 @@
           high-visited areas whereas higher thresholds prefer placing more sites
           at a diversity of areas.
         </p>
-        <div id="observablehq-map_vsites-dd9a5117"><h1>Loading...</h1></div>
+        <div id="observablehq-embed_target-16064146"><h1>Loading...</h1></div>
         <p>Read about our <a href="index.html">data and estimates</a>.</p>
       </div>
     </main>
@@ -48,11 +48,12 @@
       } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
       import define from "https://api.observablehq.com/@wattslab/philly-covid-19-optimal-vaccine-site-speed-fix.js?v=3";
       new Runtime().module(define, (name) => {
-        if (name === "map_vsites")
+        if (name === "embed_target")
           return new Inspector(
-            document.querySelector("#observablehq-map_vsites-dd9a5117")
+            document.querySelector("#observablehq-embed_target-16064146")
           );
       });
+      
     </script>
   </body>
 </html>
