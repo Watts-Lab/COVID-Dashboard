@@ -102,3 +102,27 @@
     background-color: blue;
     display: none !important;
 }
+.legend-bar {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 8px 8px 8px;
+    box-shadow: 0 0 3px grey;
+    min-height: 100px;
+  }
+  .legend-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px 0 3px 0;
+  }
+  .legend-icon h1{
+    font-size: 14px;
+    margin: 0 0 0 5px;
+  }
+  .legend-icon div{
+    background: url('../img/Shot_0.png') no-repeat center;
+    background-size: contain;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+  }
