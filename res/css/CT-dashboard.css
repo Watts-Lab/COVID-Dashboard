@@ -4,6 +4,7 @@
 }
 h1 {
   margin: 0;
+  padding: 0;
 }
 .icon{background:none;}
 .ct_tooltip, .vsites_tooltip{
