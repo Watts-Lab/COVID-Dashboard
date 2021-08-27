@@ -2,6 +2,10 @@
     width: 100% !important;
     height: 700px !important;
 }
+h1 {
+    margin: 0;
+    padding: 0;
+}
 .ct_tooltip {
     text-align: center;
   }
@@ -191,4 +195,3 @@
     overflow-x: hidden;
     overflow-y: hidden;
   }
-  
