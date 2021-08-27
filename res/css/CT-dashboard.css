@@ -1,6 +1,9 @@
 .mainmap {
-    width: 100% !important;
-    height: 700px !important;
+  width: 100% !important;
+  height: 700px !important;
+}
+h1 {
+  margin: 0;
 }
 .icon{background:none;}
 .ct_tooltip, .vsites_tooltip{
